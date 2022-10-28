@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+}
+h1 span{
+    color: blue;
+}
+.i{
+    background-color: black;
+}
+
+.Container{
+    width: 280px;
+    background: white;
+    box-shadow: 0 0 80px yellow;
+    border-color: yellow;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 40px;
+    
+}
+.Container img{
+width: 290px;
+height: 100%;
+display: block;
+border-radius: 40px;
+
+}
+.Container .box{
+    width: 100%;
+    height: 77.3vh;
+    position: absolute;
+    top: 95px;
+    left: 25px;
+    
+}
+.Container .box:before,
+.Container .box:after{
+    content: "";
+    width: 290px;
+    height: 187px;
+    position: absolute;
+    background-color: yellow;
+    border-color: yellow;
+    border-width: 120px;
+    left: 0;
+    right: 0;
+    margin: -25px;
+    transition: all, 3s;
+    opacity: 0;
+}
+.Container .box:before{
+    top: 35%;  
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.Container .box:after{
+    bottom:63.3%;  
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+}
+.Container:hover .box:before{
+    top:-15%;
+    opacity: 0.7
+}
+.Container:hover .box:after{
+    bottom:47.9%;
+    opacity: 0.7
+}
+.Container .contents{
+    width: 50%;
+    top: 50px;
+    bottom: 500px;
+    left: -30px;
+    right: 0;
+    position: absolute;
+    margin: 10px;
+    z-index: 1;
+    
+    
+}
+.Container .Social{
+    
+    list-style: none;
+    
+}
+h3 , span{
+    
+    font-weight: bolder;
+    font-size: 20px;
+    color: rgb(19, 18, 19);
+    margin-top: 40px;
+    margin-left: 10px; 
+}
+.Container .Social li {
+    margin-left: -150px;
+    padding: 8px;
+}
+.Social  {
+    margin-left: 150px;
+    margin-top:-20px;    
+    text-align: center;
+    content: icon;
+}
+.Container .Social li a {
+    color: black;
+    background: white;
+    border-radius: 50%;
+    width:23px;
+    height: 23px;
+    display: block;
+    font-size: 18px;
+    border-radius:50%;
+    line-height: 10px;   
+}
+@media all and (min-height:500px){
+    .Container:hover .box:before{
+        top:-15%;
+        opacity: 0.7
+    }
+    .Container:hover .box:after{
+        bottom:46.7%;
+        opacity: 0.7
+    }
+    
+
+}
+    
+
+
